@@ -1,44 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My-Giro</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-  <!-- Шапка 1 -->
+  <!-- Шапка (верхняя строка) -->
   <header class="header-top">
-    <div class="phone-text">Мы всегда рады помочь по телефону +7 923 398 9013</div>
-    <button class="call-button">Заказать звонок</button>
+    <div class="phone-text">Мы всегда рады помочь по телефону <a href="tel:+79233989013">+7 923 398 9013</a></div>
+    <button class="call-button" type="button">ЗАКАЗАТЬ ЗВОНОК</button>
   </header>
 
-  <!-- Шапка 2 -->
-<nav class="header-main">
-  <div class="logo">My-Giro</div>
-  <ul class="nav-menu">
-    <li><a href="#">Преимущества</a></li>
-    <li><a href="#">О нас</a></li>
-    <li><a href="#">Особенности</a></li>
-    <li><a href="#">Каталог</a></li>
-    <li><a href="#">Команда</a></li>
-    <li><a href="#">Бренды</a></li>
-    <li><a href="#">Полезное</a></li>
-  </ul>
-</nav>
+  <!-- Главное меню (вторая шапка) -->
+  <nav class="header-main" role="navigation" aria-label="Главное меню">
+    <div class="container header-main__inner">
+      <div class="logo">My-Giro</div>
+      <ul class="nav-menu" role="menubar">
+        <li role="none"><a role="menuitem" href="#">Преимущества</a></li>
+        <li role="none"><a role="menuitem" href="#">О нас</a></li>
+        <li role="none"><a role="menuitem" href="#">Особенности</a></li>
+        <li role="none"><a role="menuitem" href="#">Каталог</a></li>
+        <li role="none"><a role="menuitem" href="#">Команда</a></li>
+        <li role="none"><a role="menuitem" href="#">Бренды</a></li>
+        <li role="none"><a role="menuitem" href="#">Полезное</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<!-- Секция с большим фото -->
-<section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1 class="hero-title">My-Giro</h1>
-    <p class="hero-text">
-      Крупнейший интернет-магазин гироскутеров, сигвеев и электросамокатов
-      от известных мировых производителей
-    </p>
-    <button class="hero-button">В каталог</button>
-  </div>
-</section>
+  <!-- Главный баннер -->
+  <section class="hero" aria-label="Главный баннер">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">My-Giro</h1>
+      <p class="hero-text">
+        Крупнейший интернет-магазин гироскутеров, сигвеев и электросамокатов
+        от известных мировых производителей
+      </p>
+      <button class="hero-button" type="button">В каталог</button>
+    </div>
+  </section>
+
+  <!-- Блок: наши преимущества -->
+  <section class="advantages" aria-label="Наши преимущества">
+    <div class="advantages-inner">
+      <div class="container">
+        <h2 class="advantages-title">Наши преимущества</h2>
+
+        <!-- стрелки справа -->
+        <div class="advantages-arrows" aria-hidden="true">
+          <div class="arrow arrow-left" role="button" aria-hidden="true"></div>
+          <div class="arrow arrow-right" role="button" aria-hidden="true"></div>
+        </div>
+
+        <!-- сетка карточек -->
+        <div class="advantages-grid">
+          <div class="adv-card">
+            <div class="adv-illustration" style="background-image: url('../img/advantage1.png');"></div>
+            <div class="adv-caption">Гарантия качества</div>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-illustration" style="background-image: url('../img/advantage2.png');"></div>
+            <div class="adv-caption">Быстрая доставка</div>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-illustration" style="background-image: url('../img/advantage3.png');"></div>
+            <div class="adv-caption">Большой ассортимент</div>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-illustration" style="background-image: url('../img/advantage4.png');"></div>
+            <div class="adv-caption">Онлайн-консультант</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок: О нас -->
+  <section class="about" aria-label="О нас">
+    <div class="container about-inner">
+      <h2 class="about-title">О нас</h2>
+
+      <div class="about-texts">
+        <p class="about-paragraph">
+          В нашем интернет-магазине представлен большой выбор гироскутеров, сигвеев и электросамокатов
+          от известных мировых производителей.
+        </p>
+
+        <p class="about-paragraph">
+          Все товары, представленные на нашем сайте, отобраны лучшими специалистами в этой области.
+          Купить гироскутер, электросамокат или сигвей недорого. Вы можете в нашем интернет-магазине в
+          любое время, когда вам угодно. Доставка заказов осуществляется бесплатно, в любую точку России.
+        </p>
+      </div>
+    </div>
+
+    <!-- Подписная полоса -->
+    <div class="subscribe-bar" aria-label="Подписка">
+      <div class="container subscribe-inner">
+        <div class="subscribe-left">
+          Подпишитесь на нашу рассылку и оставайтесь в курсе событий
+        </div>
+
+        <div class="subscribe-center">
+          <div class="input-wrap">
+            <input id="name" class="subscribe-input name" type="text" placeholder="Имя" aria-label="Имя">
+          </div>
+
+          <div class="input-wrap">
+            <input id="email" class="subscribe-input email" type="email" placeholder="Email" aria-label="Email">
+          </div>
+        </div>
+
+        <div class="subscribe-right">
+          <button class="subscribe-button" type="button">Подписаться</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок: особенности гироскутеров -->
+  <section class="features">
+    <div class="container">
+      <h2 class="features-title">Особенности гироскутеров</h2>
+
+      <div class="features-grid">
+        <div class="features-col features-col--left">
+          <ul class="features-list features-list--minus">
+            <li class="feature-item">Трясет</li>
+            <li class="feature-item">Нет сиденья</li>
+            <li class="feature-item">Только для одного</li>
+          </ul>
+        </div>
+
+        <div class="features-col features-col--center">
+          <ul class="features-list features-list--plus">
+            <li class="feature-item">Исключительная компактность</li>
+            <li class="feature-item">Небольшой вес</li>
+            <li class="feature-item">Экономичность</li>
+          </ul>
+        </div>
+
+        <div class="features-col features-col--right">
+          <ul class="features-list features-list--plus">
+            <li class="feature-item">Доступность</li>
+            <li class="feature-item">Маневренность</li>
+            <li class="feature-item">Простой в освоении</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="features-info">
+        Этих преимуществ гироскутера вполне достаточно для того, чтобы в своей нише данный вид
+        транспорта являлся одним из самых лучших вариантов!
+      </p>
+    </div>
+  </section>
+
 </body>
+
 </html>
